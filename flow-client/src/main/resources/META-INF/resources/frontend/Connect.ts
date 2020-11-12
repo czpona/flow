@@ -453,7 +453,7 @@ export class ConnectClient {
   // Re-use flow connection state indicator when fetching endpoints
   private setConnectionState(state: ConnectionState) {
     if ($wnd.Vaadin.Flow?.connectionState) {
-      $wnd.Vaadin.Flow.connectionState.setState(state);
+      $wnd.Vaadin.Flow.connectionState.state = state;
     }
   }
 }
